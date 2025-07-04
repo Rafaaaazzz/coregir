@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameStore - Tu portal gamer</title>
+    <link rel="stylesheet" href="../style/index.css" />
+    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon" />
+  </head>
+  <body class="gamestore">
+    <nav class="topnav">
+      <ul class="menu-horizontal">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#destacados">Destacados</a></li>
+        <li><a href="#novedades">Novedades</a></li>
+        <li><a href="#ofertas">Ofertas</a></li>
+        <li><a href="#comprar">Cómo Comprar</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#formulario">Formulario</a></li>
+      </ul>
+    </nav>
+
+    <header class="encabezado" id="inicio">
+      <div class="contenedor-header">
+        <img
+          src="imagenes/logo.png"
+          alt="Logo GameStore"
+          class="logo-encabezado"
+        />
+        <div class="texto-encabezado">
+          <h1>GameStore</h1>
+          <p>Explora. Juega. Gana.</p>
+        </div>
+      </div>
+    </header>
+
+    <section id="destacados">
+      <h2>Juegos Destacados</h2>
+      <div class="catalogo-juegos">
+        <div class="juego">
+          <img src="imagenes/juego1.jpg" alt="Juego 1" />
+          <h3>CyberRaid 2077</h3>
+          <p>
+            Hackea el sistema y domina la ciudad en este RPG futurista lleno de
+            acción.
+          </p>
+          <button>Ver más</button>
+        </div>
+        <div class="juego">
+          <img src="imagenes/juego2.jpg" alt="Juego 2" />
+          <h3>Legends of Terra</h3>
+          <p>
+            Sumérgete en una épica fantasía y lidera tu reino hacia la victoria.
+          </p>
+          <button>Ver más</button>
+        </div>
+        <div class="juego">
+          <img src="imagenes/juego3.jpg" alt="Juego 3" />
+          <h3>Velocity Drift</h3>
+          <p>
+            Velocidad pura en pistas urbanas. ¿Podrás dominar todas las curvas?
+          </p>
+          <button>Ver más</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="novedades">
+      <h2>Novedades</h2>
+      <p>Conoce los últimos lanzamientos del mes.</p>
+      <ul>
+        <li>
+          <strong>Dark Orbit X</strong> – Shooter espacial con modo cooperativo
+          online.
+        </li>
+        <li>
+          <strong>Pixel Rush</strong> – Arcade retro con mecánicas innovadoras.
+        </li>
+        <li>
+          <strong>Survivor's Code</strong> – Aventura de supervivencia en mundo
+          abierto.
+        </li>
+      </ul>
+    </section>
+
+    <section id="ofertas">
+      <h2>Ofertas de la Semana</h2>
+      <p>Aprovecha descuentos exclusivos por tiempo limitado.</p>
+      <ul>
+        <li><strong>CyberRaid 2077</strong> - 40% OFF</li>
+        <li><strong>Pixel Rush</strong> - 25% OFF</li>
+        <li><strong>Velocity Drift</strong> - 30% OFF</li>
+      </ul>
+    </section>
+
+    <section id="comprar">
+      <h2>¿Cómo comprar en GameStore?</h2>
+      <ol>
+        <li>Crea tu cuenta gratuita.</li>
+        <li>Explora nuestro catálogo y añade juegos al carrito.</li>
+        <li>Elige tu método de pago favorito.</li>
+        <li>Recibe tu juego al instante en tu biblioteca digital.</li>
+      </ol>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>¿Tienes dudas o necesitas soporte? Estamos para ayudarte.</p>
+      <ul>
+        <li>Email: <strong>soporte@gamestore.com</strong></li>
+        <li>Teléfono: <strong>+51 987 654 321</strong></li>
+        <li>Discord: <strong>GameStoreCommunity</strong></li>
+      </ul>
+    </section>
+
+    <section
+      id="gracias"
+      style="display: none; text-align: center; padding: 40px"
+    >
+      <h2>🎉 ¡Gracias por contactarnos!</h2>
+      <p>
+        Revisaremos tu mensaje lo más pronto posible. Mientras tanto, sigue
+        explorando GameStore.
+      </p>
+    </section>
+
+    <section id="formulario">
+      <h2>Envíanos un Mensaje</h2>
+      <form name="frm" class="contact-form">
+        <div class="form-group">
+          <label for="fnombre">Nombre:</label>
+          <input type="text" id="fnombre" name="fnombre" />
+        </div>
+        <div class="form-group">
+          <label for="femail">Email:</label>
+          <input type="text" id="femail" name="femail" />
+        </div>
+        <div class="form-group">
+          <label for="fmensaje">Mensaje:</label>
+          <textarea id="fmensaje" name="fmensaje" rows="5"></textarea>
+        </div>
+        <button type="submit">Enviar Mensaje</button>
+      </form>
+    </section>
+
+    <script src="Js/logica.js"></script>
+  </body>
+</html>

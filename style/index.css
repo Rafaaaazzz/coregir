@@ -1,0 +1,210 @@
+/* Importar estilos base */
+@import url("styles.css");
+
+/* Estilos específicos para la página principal */
+
+/* Animaciones para los juegos destacados */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.juego {
+  animation: fadeInUp 0.6s ease-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.juego:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Efectos para las secciones de ofertas */
+#ofertas ul li {
+  position: relative;
+  overflow: hidden;
+}
+
+#ofertas ul li::before {
+  content: "🎮";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+}
+
+#ofertas ul li {
+  padding-left: 40px;
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#ofertas ul li:hover {
+  background: linear-gradient(135deg, #ee5a24, #ff6b6b);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+/* Estilos para la sección de novedades */
+#novedades ul li {
+  background: linear-gradient(135deg, #74b9ff, #0984e3);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+#novedades ul li::before {
+  content: "✨";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+}
+
+#novedades ul li {
+  padding-left: 40px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#novedades ul li:hover {
+  background: linear-gradient(135deg, #0984e3, #74b9ff);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+/* Estilos para la sección de contacto */
+#contacto ul li {
+  background: linear-gradient(135deg, #00b894, #00cec9);
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+#contacto ul li:hover {
+  background: linear-gradient(135deg, #00cec9, #00b894);
+  transform: scale(1.05);
+}
+
+/* Estilos para los pasos de compra */
+#comprar ol {
+  counter-reset: step-counter;
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#comprar ol li {
+  counter-increment: step-counter;
+  position: relative;
+  padding: 20px 20px 20px 60px;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #a29bfe, #6c5ce7);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  width: auto;
+  max-width: 100%;
+  display: block;
+  text-align: left;
+}
+
+#comprar ol li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+#comprar ol li:hover {
+  transform: translateX(5px);
+  transition: all 0.3s ease;
+}
+
+/* Efectos de entrada para las secciones */
+section {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Delay para animaciones secuenciales */
+section:nth-child(1) {
+  animation-delay: 0.1s;
+}
+section:nth-child(2) {
+  animation-delay: 0.2s;
+}
+section:nth-child(3) {
+  animation-delay: 0.3s;
+}
+section:nth-child(4) {
+  animation-delay: 0.4s;
+}
+section:nth-child(5) {
+  animation-delay: 0.5s;
+}
+section:nth-child(6) {
+  animation-delay: 0.6s;
+}
+section:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+/* Responsive design mejorado */
+@media (max-width: 768px) {
+  .catalogo-juegos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .juego {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  #contacto ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contacto ul li {
+    width: 90%;
+    max-width: 300px;
+  }
+}
